@@ -7,13 +7,13 @@ declared-services:
     label: cloudantNoSQLDB
     plan: Lite
 applications:
-- name: meetingroom-reservation-with-camomile
+- name: meetingroom-reservation-with-kenu
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - Conversation-vp
+  - Conversation-en
   - camomile-cloudantNoSQLDB
   env:
     NPM_CONFIG_PRODUCTION: false
